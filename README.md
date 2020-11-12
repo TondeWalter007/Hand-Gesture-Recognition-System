@@ -5,11 +5,10 @@ The project is on Skin Colour based hand gesture recognition. The proposed recog
 
 
 ColorConstancy.py contains a single method that pre-processes the input by enhancing the local contrast of an input and results in better quality for detection.  
-DominantColorExtraction.py contains multiple methods including the method to extract the dominant colour from the isolated hand region and the method that returns the masked hand image for recognition
-HandGestureRecognitionSystem.py contains the main methods for the hand detection and hand recognition algorithm
+DominantColorExtraction.py contains multiple methods including the method to extract the dominant colour from the isolated hand region and the method that returns the masked hand image for recognition.
+HandGestureRecognitionSystem.py contains the main methods for the hand detection and hand recognition algorithm.
 
 The yolov3_hand_model.cfg file contains the configuration settings to train the hand detection algorithm using YOLOv3 and the obj.names file contains a single "Human hand" class to be detected by the algorithm.
-The image dataset used to train the model was obtained from Google’s OpenImagesV6 dataset and converted into the required format using the OID Toolkit obtained from https://github.com/pythonlessons/OIDv4_ToolKit.git
-
+The image dataset used to train the model was obtained from Google’s OpenImagesV6 dataset and converted into the required format using the OID Toolkit obtained from https://github.com/pythonlessons/OIDv4_ToolKit.git.
 The model was trained up to 4000 iterations using 2000 images consisting of hands in a variety of backgrounds. The model was trained using Darknet on Google Collab because of its free access to a GPU accelarator which speeds up the training process.
 Unfortunately, I was unable to upload the trained model as the file was too large.
