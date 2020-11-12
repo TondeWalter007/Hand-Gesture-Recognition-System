@@ -10,5 +10,6 @@ HandGestureRecognitionSystem.py contains the main methods for the hand detection
 
 The yolov3_hand_model.cfg contains the configuration file to train the hand detection algorithm using YOLOv3 and the obj.names file contains a single "Human hand" class to be detected by the algorithm.
 The image dataset used to train the model was obtained from Google’s OpenImagesV6 dataset and converted into the required format using the OID Toolkit obtained from https://github.com/pythonlessons/OIDv4_ToolKit.git
+
 The model was trained up to 4000 iterations using 2000 images consisting of hands in a variety of backgrounds. The model was trained using Darknet on Google Collab because of its free access to a GPU accelarator which speeds up the training process.
 Unfortunately, I was unable to upload the trained model as the file was too large.
